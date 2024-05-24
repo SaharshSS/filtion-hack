@@ -4,6 +4,8 @@ import { hardhat, mainnet } from "viem/chains";
 import { createConfig } from "wagmi";
 import scaffoldConfig from "~~/scaffold.config";
 import { getAlchemyHttpUrl } from "~~/utils/scaffold-eth";
+import { signMessage } from '@wagmi/core'
+
 
 const { targetNetworks } = scaffoldConfig;
 
