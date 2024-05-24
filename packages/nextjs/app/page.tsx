@@ -1,9 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
-import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Address } from "~~/components/scaffold-eth";
 import { createNewPost } from "~~/services/web3/signMessage";
 import React, { useState } from 'react';
@@ -98,8 +96,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-
-
+        <Address address={connectedAddress} />
       </div>
     </>
   );
